@@ -1,68 +1,123 @@
 export default {
-  title: "Adocs",
+  title: "Java Brasil",
   description: "An awesome docs template built by me",
 
   themeConfig: {
     logo: "/logo.svg",
-    siteTitle: "Adocs",
+    siteTitle: "Java Brasil",
     // Navbar Link
     nav: [
-      { text: "About", link: "/about" },
-      { text: "Contact", link: "/contact" },
-      { text: "Guide", link: "/guide" },
-      { text: "Configs", link: "/configs" },
+      { text: "Sobre", link: "/about" },
       {
         // Dropdown Menu
-        text: "Changelog",
+        text: "Documentações",
         items: [
-          { text: "v0.0.1", link: "/item-1" },
-          { text: "v0.0.2", link: "/item-2" },
-          { text: "v0.0.3", link: "/item-3" },
+          { text: "Java-Certificado", link: "/certificado/index" },
+          { text: "Java-NFe", link: "/nfe/index" },
+          { text: "Java-CTe", link: "/cte/index" },
         ],
       },
     ],
     // Social Icons
     socialLinks: [
       { icon: "github", link: "github.com/evavic44" },
-      { icon: "twitter", link: "https://twitter.com/victorekea" },
-      { icon: "discord", link: "..." },
+      { icon: "discord", link: "https://discord.gg/ZXpqnaV" },
       {
-        icon: {
-          svg: '<svg role="img" width="26.01" height="32" viewBox="0 0 256 315"><path d="M213.803 167.03c.442 47.58 41.74 63.413 42.197 63.615c-.35 1.116-6.599 22.563-21.757 44.716c-13.104 19.153-26.705 38.235-48.13 38.63c-21.05.388-27.82-12.483-51.888-12.483c-24.061 0-31.582 12.088-51.51 12.871c-20.68.783-36.428-20.71-49.64-39.793c-27-39.033-47.633-110.3-19.928-158.406c13.763-23.89 38.36-39.017 65.056-39.405c20.307-.387 39.475 13.662 51.889 13.662c12.406 0 35.699-16.895 60.186-14.414c10.25.427 39.026 4.14 57.503 31.186c-1.49.923-34.335 20.044-33.978 59.822M174.24 50.199c10.98-13.29 18.369-31.79 16.353-50.199c-15.826.636-34.962 10.546-46.314 23.828c-10.173 11.763-19.082 30.589-16.678 48.633c17.64 1.365 35.66-8.964 46.64-22.262"/></svg>',
-        },
-        link: "https://google.com",
+        icon: "youtube",
+        link: "https://www.youtube.com/user/0SaMs/streams",
       },
     ],
     // Sidebar
-    sidebar: [
-      {
-        text: "Section A",
-        collapsible: true,
-        items: [
-          { text: "Introduction", link: "/introduction" },
-          { text: "Getting Started", link: "/getting-started" },
-        ],
-      },
-      {
-        text: "Section B",
-        collapsible: false,
-        items: [
-          { text: "Introduction", link: "/introduction" },
-          { text: "Getting Started", link: "/getting-started" },
-        ],
-      },
-      {
-        text: "Section C",
-        collapsible: true,
-        items: [
-          { text: "Introduction", link: "/introduction" },
-          { text: "Getting Started", link: "/getting-started" },
-        ],
-      },
-    ],
+    sidebar: {
+      // This sidebar gets displayed when user is
+      // under `guide` directory.
+      '/certificado/': [
+        {
+          text: 'Inicio',
+          items: [
+            // This shows `/guide/index.md` page.
+            { text: 'Pagina Inicial', link: '/certificado/index' }, 
+          ]
+        },
+        {
+          text: 'Configuração',
+          items: [
+            // This shows `/guide/index.md` page.
+            { text: 'Certificado A1', link: '/certificado/certificado-a1' }, 
+            { text: 'Certificado A3', link: '/certificado/certificado-a3' },
+            { text: 'Certificado Por CNPJ/CPF', link: '/certificado/certificado-por-cnpjcpf' }, 
+            { text: 'Repositórios', link: '/certificado/repositorios' } 
+          ]
+        },
+      ],
+
+      '/nfe/': [
+        {
+          text: 'Inicio',
+          items: [
+            // This shows `/guide/index.md` page.
+            { text: 'Pagina Inicial', link: '/nfe/index' }, 
+          ]
+        },
+        {
+          text: 'Configuração',
+          items: [
+            // This shows `/guide/index.md` page.
+            { text: 'Certificado', link: '/nfe/configuracoes' }, 
+          ]
+        },
+        {
+          text: 'NFe',
+          items: [
+            // This shows `/guide/index.md` page.
+            { text: 'Status Serviço Sefaz', link: '/nfe/status-servico' },
+            { text: 'Consulta Situação', link: '/nfe/consulta-situacao' },
+            { text: 'Envio', link: '/nfe/envio' },
+            { text: 'Cancelamento', link: '/nfe/cancelamento' },
+            { text: 'Carta de Correção Eletrônica', link: '/nfe/cce' },
+            { text: 'Inutilização', link: '/nfe/inutilizacao' },
+            { text: 'Manifestação', link: '/nfe/manifestacao' },
+            { text: 'Baixar Documento (DistDfe)', link: '/nfe/baixar-documento' },
+            { text: 'Consulta Cadastro', link: '/nfe/consulta-cadastro' },
+            { text: 'Envio Epec', link: '/nfe/envio-epec' },
+          ]
+        },
+      ],
+
+      '/cte/': [
+        {
+          text: 'Inicio',
+          items: [
+            // This shows `/guide/index.md` page.
+            { text: 'Pagina Inicial', link: '/cte/index' }, 
+          ]
+        },
+        {
+          text: 'Configuração',
+          items: [
+            // This shows `/guide/index.md` page.
+            { text: 'Certificado', link: '/cte/configuracoes' }, 
+          ]
+        },
+        {
+          text: 'CTe',
+          items: [
+            // This shows `/guide/index.md` page.
+            { text: 'Status Serviço Sefaz', link: '/cte/status-servico' },
+            { text: 'Consulta Situação', link: '/cte/consulta-situacao' },
+            { text: 'Envio', link: '/cte/envio' },
+            { text: 'Cancelamento', link: '/cte/cancelamento' },
+            { text: 'Inutilização', link: '/cte/inutilizacao' },
+            { text: 'Carta de Correção Eletrônica', link: '/cte/carta-correcao' },
+            { text: 'Baixar Documento', link: '/cte/baixar-documento' },
+          ]
+        },
+      ],
+
+    },
     footer: {
-      message: "Released under the MIT License.",
-      copyright: "Copyright © 2022-present Adocs",
+      message: "MIT License.",
+      copyright: "Copyright © 2022 Java Brasil",
     },
     markdown: {
       theme: "material-palenight",

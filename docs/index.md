@@ -3,34 +3,51 @@ layout: home
 
 # Hero section
 hero:
-  name: Adocs
-  text: Static docs template built with VitePress.
+  name: Java Brasil
+  text: Documentações
   image:
     src: /logo-big.svg
-    alt: Adocs logo
-  tagline: A free to use template for creating docs for your projects
+    alt: Java Brasil logo
+  tagline: Veja e explore o uso de todos pacotes criado pela Java Brasil nas diversas documentações listadas no site
   actions:
     - theme: brand
-      text: Get Started
-      link: /guide
-    - theme: alt
-      text: View on GitHub
-      link: https://github.com/Evavic44/adocs
+      text: Ver no GitHub
+      link: https://github.com/Samuel-Oliveira
 
 # Features section
 features:
-  - icon: ⚡️
-    title: Adocs, The DX that can't be beat
-    details: Lorem ipsum...
-  - icon: 🎉
-    title: Power of Vue meets Markdown
-    details: Lorem ipsum...
-  - icon: 🔥
-    title: Simple and minimal, always
-    details: Lorem ipsum...
-  - icon: 🎀
-    title: Stylish and cool
-    details: Lorem ipsum...
+  - title: Java-NFe
+    details: Biblioteca Java para consumo do WebService de NFe/NFCe
+    link: /nfe/
+    linkText: "Exibir"
+  - title: Java-CTe
+    details: Biblioteca Java para consumo do WebService de CTe
+    link: /cte/
+    linkText: "Exibir"
+  - title: Java-MDFe
+    details: Biblioteca Java para consumo do WebService de MDFe
+    link: https://github.com/Samuel-Oliveira/Java_MDFe
+    linkText: "Exibir"
+  - title: Java-Certificado
+    details: Projeto Java de Gerenciamentos de Certificado Digital
+    link: /certificado/
+    linkText: "Exibir"
+  - title: Java-Efd-ICMS
+    details: Projeto Java de Gerenciamentos de Certificado Digital
+    link: https://github.com/Samuel-Oliveira/Java-Efd-Icms
+    linkText: "Acessar"  
+  - title: Java-Efd-Contribuições
+    details: Projeto Java de Gerenciamentos de Certificado Digital
+    link: https://github.com/Samuel-Oliveira/Java-Efd-Contribuicoes
+    linkText: "Acessar"  
+  - title: Java-DANFe
+    details: Projeto Java de Gerenciamentos de Certificado Digital
+    link: https://github.com/Samuel-Oliveira/Java_Danfe
+    linkText: "Acessar"  
+  - title: Java-eSocial
+    details: Projeto Java de Gerenciamentos de Certificado Digital
+    link: https://github.com/Samuel-Oliveira/Java-eSocial
+    linkText: "Acessar"  
 
 # Meta property
 head:

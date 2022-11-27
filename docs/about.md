@@ -1,21 +1,23 @@
-# About
+[![MIT License](https://img.shields.io/github/license/Samuel-Oliveira/Java_Certificado.svg)](https://github.com/Samuel-Oliveira/Java_Certificado/blob/master/LICENSE) [![Maven Central](https://img.shields.io/maven-central/v/br.com.swconsultoria/java_certificado.svg?label=Maven%20Central)](https://search.maven.org/artifact/br.com.swconsultoria/java_certificado/2.8/jar) [![Build Status](https://travis-ci.org/Samuel-Oliveira/Java_Certificado.svg?branch=master)](https://travis-ci.org/Samuel-Oliveira/Java_Certificado) [![Language grade: Java](https://img.shields.io/lgtm/grade/java/g/Samuel-Oliveira/Java_Certificado.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Samuel-Oliveira/Java_Certificado/context:java) [![Total alerts](https://img.shields.io/lgtm/alerts/g/Samuel-Oliveira/Java_Certificado.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Samuel-Oliveira/Java_Certificado/alerts/)
 
-Welcome to the about page.
+***Projeto Java de Gerenciamentos de Certificado Digital***
 
-This markdown supports html elements like the `p` tag coupled with inline styles
+## Dúvidas, Sugestões ou Consultoria
+### Entre no Discord do Projeto: [https://discord.gg/ZXpqnaV](https://discord.gg/ZXpqnaV)
 
-<p style="color: var(--vp-c-brand-dark); border: 1px solid var(--vp-c-brand-dark); border-radius:5px; padding: 1rem;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+## Gostou do Projeto? Dê sua colaboração pelo Pix: 01713390108
+<p align="center">
+    <img src="https://swconsultoria.com.br/pix.png" width="220">
+</p>
 
-Even satire code snippets with syntax highlighting are also supported. 😅
+Para Iniciar : 
+- Caso use Libs baixe o java-certificado-2.8.jar (https://github.com/Samuel-Oliveira/Java_Certificado/raw/master/java_certificado-2.8.jar) e o adicione às bibliotecas de Seu Projeto.
 
-```js
-const lang = prompt("What is your favorite programming language?");
-
-(lang === "JavaScript") | (lang === "javascript") | (lang === "js")
-  ? alert("JavaScript to the world! 🚀🟡")
-  : alert(`We don't permit such languages here 💩`);
+- Caso use Maven :
+```xml
+<dependency>
+    <groupId>br.com.swconsultoria</groupId>
+    <artifactId>java_certificado</artifactId>
+    <version>2.8</version>
+</dependency>
 ```
-
-Of course, images are not left out.
-
-<img src="/logo.svg" alt="adocs logo">
