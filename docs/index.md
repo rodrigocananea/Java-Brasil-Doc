@@ -27,27 +27,27 @@ features:
   - title: Java-MDFe
     details: Biblioteca Java para consumo do WebService de MDFe
     link: https://github.com/Samuel-Oliveira/Java_MDFe
-    linkText: "Exibir"
+    linkText: "Github"
   - title: Java-Certificado
     details: Projeto Java de Gerenciamentos de Certificado Digital
     link: /certificado/
     linkText: "Exibir"
+  - title: Java-Boletos
+    details: Projeto para geração de boletos dos bancos criado e mantido pela comunidade JavaBrasil
+    link: /boletos/
+    linkText: "Exibir"  
   - title: Java-Efd-ICMS
-    details: Projeto Java de Gerenciamentos de Certificado Digital
+    details: Projeto Para implementação de Efd-Icms(Escrituação Fiscal Digital Icms/Pis) em ambientes Java de Forma Facilitada.
     link: https://github.com/Samuel-Oliveira/Java-Efd-Icms
-    linkText: "Acessar"  
+    linkText: "Github"  
   - title: Java-Efd-Contribuições
-    details: Projeto Java de Gerenciamentos de Certificado Digital
+    details: Projeto Para implementação de Efd-Contribuições(Escrituação Fiscal Digital Pis/Cofins) em ambientes Java de Forma Facilitada.
     link: https://github.com/Samuel-Oliveira/Java-Efd-Contribuicoes
-    linkText: "Acessar"  
+    linkText: "Github"  
   - title: Java-DANFe
-    details: Projeto Java de Gerenciamentos de Certificado Digital
+    details: Biblioteca para impressão de Documentos Fiscais
     link: https://github.com/Samuel-Oliveira/Java_Danfe
-    linkText: "Acessar"  
-  - title: Java-eSocial
-    details: Projeto Java de Gerenciamentos de Certificado Digital
-    link: https://github.com/Samuel-Oliveira/Java-eSocial
-    linkText: "Acessar"  
+    linkText: "Github"  
 
 # Meta property
 head:

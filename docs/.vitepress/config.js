@@ -15,6 +15,8 @@ export default {
           { text: "Java-Certificado", link: "/certificado/index" },
           { text: "Java-NFe", link: "/nfe/index" },
           { text: "Java-CTe", link: "/cte/index" },
+          { text: "Java-Boletos", link: "/boletos/index" },
+          { text: "Java-eSocial", link: "https://github.com/Samuel-Oliveira/Java-eSocial" },
         ],
       },
     ],
@@ -31,22 +33,42 @@ export default {
     sidebar: {
       // This sidebar gets displayed when user is
       // under `guide` directory.
-      '/certificado/': [
+      '/danfe/': [
         {
           text: 'Inicio',
           items: [
             // This shows `/guide/index.md` page.
-            { text: 'Pagina Inicial', link: '/certificado/index' }, 
+            { text: 'Pagina Inicial', link: '/danfe/index' },
           ]
         },
         {
           text: 'Configuração',
           items: [
             // This shows `/guide/index.md` page.
-            { text: 'Certificado A1', link: '/certificado/certificado-a1' }, 
+            { text: 'Certificado A1', link: '/danfe/certificado-a1' },
+            { text: 'Certificado A3', link: '/danfe/certificado-a3' },
+            { text: 'Certificado Por CNPJ/CPF', link: '/danfe/certificado-por-cnpjcpf' },
+            { text: 'Repositórios', link: '/danfe/repositorios' }
+          ]
+        },
+      ],
+
+      '/certificado/': [
+        {
+          text: 'Inicio',
+          items: [
+            // This shows `/guide/index.md` page.
+            { text: 'Pagina Inicial', link: '/certificado/index' },
+          ]
+        },
+        {
+          text: 'Configuração',
+          items: [
+            // This shows `/guide/index.md` page.
+            { text: 'Certificado A1', link: '/certificado/certificado-a1' },
             { text: 'Certificado A3', link: '/certificado/certificado-a3' },
-            { text: 'Certificado Por CNPJ/CPF', link: '/certificado/certificado-por-cnpjcpf' }, 
-            { text: 'Repositórios', link: '/certificado/repositorios' } 
+            { text: 'Certificado Por CNPJ/CPF', link: '/certificado/certificado-por-cnpjcpf' },
+            { text: 'Repositórios', link: '/certificado/repositorios' }
           ]
         },
       ],
@@ -56,14 +78,14 @@ export default {
           text: 'Inicio',
           items: [
             // This shows `/guide/index.md` page.
-            { text: 'Pagina Inicial', link: '/nfe/index' }, 
+            { text: 'Pagina Inicial', link: '/nfe/index' },
           ]
         },
         {
           text: 'Configuração',
           items: [
             // This shows `/guide/index.md` page.
-            { text: 'Certificado', link: '/nfe/configuracoes' }, 
+            { text: 'Certificado', link: '/nfe/configuracoes' },
           ]
         },
         {
@@ -89,14 +111,14 @@ export default {
           text: 'Inicio',
           items: [
             // This shows `/guide/index.md` page.
-            { text: 'Pagina Inicial', link: '/cte/index' }, 
+            { text: 'Pagina Inicial', link: '/cte/index' },
           ]
         },
         {
           text: 'Configuração',
           items: [
             // This shows `/guide/index.md` page.
-            { text: 'Certificado', link: '/cte/configuracoes' }, 
+            { text: 'Certificado', link: '/cte/configuracoes' },
           ]
         },
         {
@@ -110,6 +132,53 @@ export default {
             { text: 'Inutilização', link: '/cte/inutilizacao' },
             { text: 'Carta de Correção Eletrônica', link: '/cte/carta-correcao' },
             { text: 'Baixar Documento', link: '/cte/baixar-documento' },
+          ]
+        },
+      ],
+
+      '/boletos/': [
+        {
+          text: 'Inicio',
+          items: [
+            // This shows `/guide/index.md` page.
+            { text: 'Pagina Inicial', link: '/boletos/index' },
+            { text: 'Configuração básica', link: '/boletos/configuracoes' },
+          ]
+        },
+        {
+          text: 'Banrisul',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            // This shows `/guide/index.md` page.
+            { text: 'Configuração', link: '/boletos/banrisul/configuracoes' },
+            { text: 'Preenchimento', link: '/boletos/banrisul/preenchimento' },
+            { text: 'API', link: '/boletos/banrisul/api' },
+            { text: 'CNAB', link: '/boletos/banrisul/cnab' },
+          ]
+        },
+        {
+          text: 'Banco do Brasil',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            // This shows `/guide/index.md` page.
+            { text: 'Configuração', link: '/boletos/banrisul/configuracoes' },
+            { text: 'Preenchimento', link: '/boletos/banrisul/configuracoes' },
+            { text: 'API', link: '/boletos/banrisul/configuracoes' },
+            { text: 'CNAB', link: '/boletos/banrisul/configuracoes' },
+          ]
+        },
+        {
+          text: 'Sicredi',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            // This shows `/guide/index.md` page.
+            { text: 'Configuração', link: '/boletos/banrisul/configuracoes' },
+            { text: 'Preenchimento', link: '/boletos/banrisul/configuracoes' },
+            { text: 'API', link: '/boletos/banrisul/configuracoes' },
+            { text: 'CNAB', link: '/boletos/banrisul/configuracoes' },
           ]
         },
       ],
