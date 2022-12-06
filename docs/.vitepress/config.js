@@ -31,20 +31,16 @@ export default {
     ],
     // Sidebar
     sidebar: {
-      // This sidebar gets displayed when user is
-      // under `guide` directory.
       '/danfe/': [
         {
           text: 'Inicio',
           items: [
-            // This shows `/guide/index.md` page.
             { text: 'Pagina Inicial', link: '/danfe/index' },
           ]
         },
         {
           text: 'Configuração',
           items: [
-            // This shows `/guide/index.md` page.
             { text: 'Certificado A1', link: '/danfe/certificado-a1' },
             { text: 'Certificado A3', link: '/danfe/certificado-a3' },
             { text: 'Certificado Por CNPJ/CPF', link: '/danfe/certificado-por-cnpjcpf' },
@@ -57,14 +53,12 @@ export default {
         {
           text: 'Inicio',
           items: [
-            // This shows `/guide/index.md` page.
             { text: 'Pagina Inicial', link: '/certificado/index' },
           ]
         },
         {
           text: 'Configuração',
           items: [
-            // This shows `/guide/index.md` page.
             { text: 'Certificado A1', link: '/certificado/certificado-a1' },
             { text: 'Certificado A3', link: '/certificado/certificado-a3' },
             { text: 'Certificado Por CNPJ/CPF', link: '/certificado/certificado-por-cnpjcpf' },
@@ -77,21 +71,18 @@ export default {
         {
           text: 'Inicio',
           items: [
-            // This shows `/guide/index.md` page.
             { text: 'Pagina Inicial', link: '/nfe/index' },
           ]
         },
         {
           text: 'Configuração',
           items: [
-            // This shows `/guide/index.md` page.
             { text: 'Certificado', link: '/nfe/configuracoes' },
           ]
         },
         {
           text: 'NFe',
           items: [
-            // This shows `/guide/index.md` page.
             { text: 'Status Serviço Sefaz', link: '/nfe/status-servico' },
             { text: 'Consulta Situação', link: '/nfe/consulta-situacao' },
             { text: 'Envio', link: '/nfe/envio' },
@@ -110,21 +101,18 @@ export default {
         {
           text: 'Inicio',
           items: [
-            // This shows `/guide/index.md` page.
             { text: 'Pagina Inicial', link: '/cte/index' },
           ]
         },
         {
           text: 'Configuração',
           items: [
-            // This shows `/guide/index.md` page.
             { text: 'Certificado', link: '/cte/configuracoes' },
           ]
         },
         {
           text: 'CTe',
           items: [
-            // This shows `/guide/index.md` page.
             { text: 'Status Serviço Sefaz', link: '/cte/status-servico' },
             { text: 'Consulta Situação', link: '/cte/consulta-situacao' },
             { text: 'Envio', link: '/cte/envio' },
@@ -140,7 +128,6 @@ export default {
         {
           text: 'Inicio',
           items: [
-            // This shows `/guide/index.md` page.
             { text: 'Pagina Inicial', link: '/boletos/index' },
             { text: 'Configuração básica', link: '/boletos/configuracoes' },
           ]
@@ -150,37 +137,33 @@ export default {
           collapsible: true,
           collapsed: true,
           items: [
-            // This shows `/guide/index.md` page.
             { text: 'Configuração', link: '/boletos/banrisul/configuracoes' },
             { text: 'Preenchimento', link: '/boletos/banrisul/preenchimento' },
             { text: 'API', link: '/boletos/banrisul/api' },
             { text: 'CNAB', link: '/boletos/banrisul/cnab' },
           ]
         },
+
         {
-          text: 'Banco do Brasil',
+          text: 'Bradesco',
           collapsible: true,
           collapsed: true,
           items: [
-            // This shows `/guide/index.md` page.
-            { text: 'Configuração', link: '/boletos/banrisul/configuracoes' },
-            { text: 'Preenchimento', link: '/boletos/banrisul/configuracoes' },
-            { text: 'API', link: '/boletos/banrisul/configuracoes' },
-            { text: 'CNAB', link: '/boletos/banrisul/configuracoes' },
+            { text: 'Configuração', link: '/boletos/bradesco/configuracoes' },
+            { text: 'Preenchimento', link: '/boletos/bradesco/preenchimento' },
+            { text: 'API', link: '/boletos/bradesco/api' },
+            { text: 'CNAB', link: '/boletos/bradesco/cnab' },
           ]
         },
-        {
-          text: 'Sicredi',
-          collapsible: true,
-          collapsed: true,
-          items: [
-            // This shows `/guide/index.md` page.
-            { text: 'Configuração', link: '/boletos/banrisul/configuracoes' },
-            { text: 'Preenchimento', link: '/boletos/banrisul/configuracoes' },
-            { text: 'API', link: '/boletos/banrisul/configuracoes' },
-            { text: 'CNAB', link: '/boletos/banrisul/configuracoes' },
-          ]
-        },
+
+        // {
+        //   text: 'Exemplo',
+        //   collapsible: true,
+        //   collapsed: true,
+        //   items: [
+        //     { text: 'Teste', link: '/boletos/banrisul/teste' },
+        //   ]
+        // },
       ],
 
     },

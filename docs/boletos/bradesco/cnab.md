@@ -1,4 +1,4 @@
-# CNAB 240
+# CNAB 400
 
 ::: tip Sobre
 O método [preencheBoleto](/boletos/banrisul/preenchimento) deve ser utilizado conforme 
@@ -11,10 +11,11 @@ BoletoModel boleto = preencheBoleto();
 
 RemessaRetornoModel remessa = new RemessaRetornoModel();
 remessa.setBoleto(boleto);
-remessa.setNumeroRemessa("1");
-remessa.setImpressaoTitulo("2");
+remessa.setNumeroRemessa("10");
 remessa.setPostagemTitulo("2");
+remessa.setImpressaoTitulo("2");
 remessa.setInstrucao("01");
+remessa.setJuroDeMora(BigDecimal.TEN);
 
 List<RemessaRetornoModel> remessas = Arrays.asList(remessa);
 

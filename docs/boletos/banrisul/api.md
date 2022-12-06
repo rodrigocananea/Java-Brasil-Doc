@@ -1,6 +1,6 @@
 # API
 
-::: warning AVISO!
+::: tip Sobre
 O método [preencheBoleto](/boletos/banrisul/preenchimento) deve ser utilizado conforme 
 na pagina lida anteriormente junto a inicialização do [boletoService](/boletos/banrisul/configuracoes)
 :::
@@ -18,10 +18,14 @@ boletoModel = boletoService.alterarBoleto(boletoModel);
 ```
 ### Consulta
 ```java
-BoletoModel boletoModel = preencheBoleto();
+BoletoModel boletoModel = // ...
 boletoModel = boletoService.consultarBoleto(boletoModel);
 ```
-
+### Baixar
+```java
+BoletoModel boletoModel = // ...
+boletoModel = boletoService.baixarBoleto(boletoModel);
+```
 ### Imprimir
 ```java
 BoletoModel boletoModel = preencheBoleto();

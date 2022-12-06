@@ -7,16 +7,15 @@ private BoletoModel preencheBoleto() {
     BoletoModel boleto = new BoletoModel();
 
     Beneficiario beneficiario = new Beneficiario();
-    beneficiario.setAgencia("0475");
-    beneficiario.setCarteira(null);
-    beneficiario.setConta("2187670");
+    beneficiario.setAgencia("4342");
+    beneficiario.setCarteira("09");
+    beneficiario.setConta("59529");
     beneficiario.setDocumento("00000000000101");
     beneficiario.setNomeBeneficiario("EMPRESA DE TESTE");
-    beneficiario.setDigitoAgencia("0");
+    beneficiario.setDigitoAgencia("7");
     beneficiario.setPostoDaAgencia(null);
-    beneficiario.setDigitoConta("77");
-    beneficiario.setNumeroConvenio("123456");
-    beneficiario.setCarteira("1");
+    beneficiario.setDigitoConta("2");
+    beneficiario.setNumeroConvenio("1457020");
 
     Endereco enderecoBenef = new Endereco();
     enderecoBenef.setBairro("CENTRO");
@@ -33,6 +32,7 @@ private BoletoModel preencheBoleto() {
     pagador.setNome("SAMUEL BORGES DE OLIVEIRA");
     pagador.setDocumento("01713390108"); // <- PIX
     pagador.setCodigo("999");
+
     Endereco endereco = new Endereco();
     endereco.setLogradouro("Endereco Teste");
     endereco.setNumero("0");
@@ -42,28 +42,28 @@ private BoletoModel preencheBoleto() {
     endereco.setCidade("ANAPOLIS");
     endereco.setUf("GO");
     pagador.setEndereco(endereco);
+
     boleto.setPagador(pagador);
 
-    boleto.setContratoEspecie("805076");
-    boleto.setNossoNumero("22200593");
-    boleto.setDigitoNossoNumero("78");
+    boleto.setNossoNumero("00000000002");
+    boleto.setDigitoNossoNumero("8");
     boleto.setValorBoleto(BigDecimal.TEN);
     boleto.setDataVencimento(LocalDate.of(2022, 6, 30));
-    
+
     List<InformacaoModel> locaisPagamento = new ArrayList<>();
     locaisPagamento.add(new InformacaoModel("PAGÁVEL PREFERENCIALMENTE EM CANAIS DA SUA INSTITUIÇÃO FINANCEIRA"));
     boleto.setLocaisDePagamento(locaisPagamento);
-    
+
     boleto.setDataEmissao(LocalDate.now());
     boleto.setNumeroDocumento("000004852");
-    boleto.setEspecieDocumento("2");
+    boleto.setEspecieDocumento("01");
     boleto.setAceite(false);
     boleto.setEspecieMoeda("REAL");
 
     List<InformacaoModel> instrucoes = new ArrayList<>();
     instrucoes.add(new InformacaoModel("PROTESTO AUTOMÁTICO APÓS 5 DIAS DO VENCIMENTO"));
     boleto.setInstrucoes(instrucoes);
-    
+
     boleto.setTipoJuros(TipoJurosEnum.PERCENTUAL_MENSAL);
     boleto.setDiasJuros(1);
     boleto.setValorPercentualJuros(BigDecimal.valueOf(9.9));
@@ -76,6 +76,7 @@ private BoletoModel preencheBoleto() {
     boleto.setNegativacaoAutomatica(false);
     boleto.setTipoImpressao("A");
     boleto.setEspecieMoeda("REAL");
+    boleto.setCodigosEmpresa("5373762");
 
     return boleto;
 }
