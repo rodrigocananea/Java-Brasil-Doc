@@ -132,6 +132,19 @@ export default {
             { text: 'Configuração básica', link: '/boletos/configuracoes' },
           ]
         },
+
+        {
+          text: 'Banco do Brasil',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Configuração', link: '/boletos/banco-do-brasil/configuracoes' },
+            { text: 'Preenchimento', link: '/boletos/banco-do-brasil/preenchimento' },
+            { text: 'API', link: '/boletos/banco-do-brasil/api' },
+            { text: 'CNAB', link: '/boletos/banco-do-brasil/cnab' },
+          ]
+        },
+
         {
           text: 'Banrisul',
           collapsible: true,
