@@ -10,7 +10,6 @@ na pagina lida anteriormente junto a inicialização do [boletoService](/boletos
 BoletoModel boletoModel = preencheBoleto();
 boletoModel = boletoService.enviarBoleto(boletoModel);
 ```
-
 ### Alterar
 ```java
 BoletoModel boletoModel = preencheBoleto();

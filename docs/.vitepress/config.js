@@ -169,6 +169,28 @@ export default {
           ]
         },
 
+        {
+          text: 'Itaú',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Configuração', link: '/boletos/itau/configuracoes' },
+            { text: 'Preenchimento', link: '/boletos/itau/preenchimento' },
+            { text: 'API', link: '/boletos/itau/api' },
+          ]
+        },
+
+        {
+          text: 'Safe2Pay',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Configuração', link: '/boletos/safe2pay/configuracoes' },
+            { text: 'Preenchimento', link: '/boletos/safe2pay/preenchimento' },
+            { text: 'API', link: '/boletos/safe2pay/api' },
+          ]
+        },
+
         // {
         //   text: 'Exemplo',
         //   collapsible: true,
