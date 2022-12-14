@@ -2,6 +2,11 @@
 
 O preenchimento do boleto deve ser feito de acordo com o método abaixo
 
+::: warning Aviso!
+O campo **nossoNumero** é uma informação equivalente ao **numeroBoleto**, e deve ser utilizado de forma incremental/unica para cada emissão
+de um novo boleto
+:::
+
 ```java
 private BoletoModel preencheBoleto() {
     BoletoModel boleto = new BoletoModel();
