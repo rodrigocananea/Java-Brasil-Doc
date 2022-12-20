@@ -1,8 +1,8 @@
 # CNAB 240
 
 ::: tip Sobre
-O método [preencheBoleto](/boletos/banrisul/preenchimento) deve ser utilizado conforme 
-na pagina lida anteriormente junto a inicialização do [boletoService](/boletos/banrisul/configuracoes)
+O método [preencheBoleto](/boletos/sicoob/preenchimento) deve ser utilizado conforme 
+na pagina lida anteriormente junto a inicialização do [boletoService](/boletos/sicoob/configuracoes)
 :::
 
 ### Gerar Remessa
@@ -25,10 +25,15 @@ System.out.println(arquivo);
 
 ### Importar Retorno
 ```java
-String arquivo = // arquivo de retorno
+StringBuilder arquivo = new StringBuilder();
 
-List<RemessaRetornoModel> retorno = boletoService.importarArquivoRetorno(arquivo);
+for (String linha : Files.readAllLines(Paths.get("d:/teste/sicoobretorno.ret"))) {
+    arquivo.append(linha).append(System.lineSeparator());
+}
 
+List<RemessaRetornoModel> remessaRetornoModels = boletoService.importarArquivoRetorno(arquivo.toString());
+
+System.out.println(remessaRetornoModels);
 ```
 
 ### Imprimir
@@ -46,4 +51,17 @@ PrintService impressoraUtilizada = // impressora padrão ou selecionada
 // Caso o imprimirDireto seja false será aberto na 
 // tela um jasperViewer com o PDF dentro
 boletoService.imprimirBoletoJasperDesktop(boletoModel, imprimirDireto, impressoraPadrao);
+```
+
+### Imprimir em conjunto
+```java
+BoletoModel boleto1 = preencheBoleto();
+BoletoModel boleto2 = preencheBoleto();
+
+byte[] bytes1 = boletoService.imprimirBoletoJasper(boleto1);
+byte[] bytes2 = boletoService.imprimirBoletoJasper(boleto2);
+
+byte[] bytesUnidos = JasperUtil.unirRelatorio(Arrays.asList(bytes1, bytes2));
+
+Files.write(Paths.get("d:/teste/teste.pdf"), bytesUnidos);
 ```

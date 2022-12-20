@@ -30,3 +30,8 @@ String arquivo = // arquivo de retorno
 List<RemessaRetornoModel> retorno = boletoService.importarArquivoRetorno(arquivo);
 
 ```
+
+### Imprimir
+::: warning INFO
+Ainda está sendo implementado este método.
+:::

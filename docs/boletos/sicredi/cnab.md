@@ -1,8 +1,8 @@
-# CNAB 240
+# CNAB 400
 
 ::: tip Sobre
-O método [preencheBoleto](/boletos/banrisul/preenchimento) deve ser utilizado conforme 
-na pagina lida anteriormente junto a inicialização do [boletoService](/boletos/banrisul/configuracoes)
+O método [preencheBoleto](/boletos/sicredi/preenchimento) deve ser utilizado conforme 
+na pagina lida anteriormente junto a inicialização do [boletoService](/boletos/sicredi/configuracoes)
 :::
 
 ### Gerar Remessa

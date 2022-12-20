@@ -1,3 +1,4 @@
+
 export default {
   title: "Java Brasil",
   description: "An awesome docs template built by me",
@@ -188,6 +189,29 @@ export default {
             { text: 'Configuração', link: '/boletos/safe2pay/configuracoes' },
             { text: 'Preenchimento', link: '/boletos/safe2pay/preenchimento' },
             { text: 'API', link: '/boletos/safe2pay/api' },
+          ]
+        },
+
+        {
+          text: 'Sicoob',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Configuração', link: '/boletos/sicoob/configuracoes' },
+            { text: 'Preenchimento', link: '/boletos/sicoob/preenchimento' },
+            { text: 'API', link: '/boletos/sicoob/api' },
+            { text: 'CNAB', link: '/boletos/sicoob/cnab' },
+          ]
+        },
+
+        {
+          text: 'Sicredi',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Configuração', link: '/boletos/sicredi/configuracoes' },
+            { text: 'Preenchimento', link: '/boletos/sicredi/preenchimento' },
+            { text: 'CNAB', link: '/boletos/sicredi/cnab' },
           ]
         },
 
