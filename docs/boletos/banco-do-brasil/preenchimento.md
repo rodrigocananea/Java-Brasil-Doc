@@ -5,8 +5,10 @@ O preenchimento do boleto deve ser feito de acordo com o método abaixo
 ::: warning Aviso!
 Número de identificação do boleto (correspondente ao **NOSSO NÚMERO**), no formato **STRING**,
 com 20 dígitos, que deverá ser formatado da seguinte forma: “000” + (**número do convênio** com 7 dígitos) + (**número de controle** com 10 dígitos - se necessário, completar com zeros à esquerda).
----
-Para o envio via **API** ele é montado sozinho utilizando **numeroBoleto**.
+:::
+
+::: warning Aviso!
+Para o envio via **API** o **NOSSO NÚMERO** é montado sozinho utilizando **numeroBoleto**.
 :::
 
 ```java
