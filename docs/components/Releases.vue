@@ -17,7 +17,7 @@ const http = axios.create({
   headers: {
     Accept: "application/vnd.github+json",
     Authorization:
-      "Bearer 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",
+      "Bearer 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",
   },
 });
 
@@ -25,7 +25,7 @@ let releases = ref();
 
 onBeforeMount(() => {
   http
-    .get("/repos/rodrigocananea/java-boletos/releases")
+    .get("/repos/Java-Brasil/Java-Boletos/releases")
     .then((res) => {
       releases.value = res.data;
     })
