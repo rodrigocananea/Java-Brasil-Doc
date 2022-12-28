@@ -23,7 +23,7 @@ export default {
     ],
     // Social Icons
     socialLinks: [
-      { icon: "github", link: "github.com/evavic44" },
+      { icon: "github", link: "https://github.com/Samuel-Oliveira" },
       { icon: "discord", link: "https://discord.gg/ZXpqnaV" },
       {
         icon: "youtube",
