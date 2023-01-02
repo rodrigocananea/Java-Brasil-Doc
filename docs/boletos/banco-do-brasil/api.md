@@ -13,7 +13,21 @@ System.out.println(retorno.getCodRetorno() + " - " + retorno.getMensagemRetorno(
 System.out.println(retorno.getCodigoBarras());
 ```
 
-### Alterar / Consultar / Baixar / Imprimir
+### Consulta
+```java
+BoletoModel boletoModel = // boletoModel com nossoNumero e numeroConvenio preenchidos
+BoletoModel retorno = boletoService.consultarBoleto(boletoModel);
+System.out.println(retorno.getCodRetorno() + " - " + retorno.getMensagemRetorno());
+System.out.println(retorno.getCodigoBarras());
+```
+
+Alterar / Consultar / Baixar /
+### Imprimir
+::: info Sobre
+Estes métodos ainda estão em desenvolvimento
+:::
+
+### Imprimir
 ::: danger Aviso
 O banco não permite essas operações via API
 :::
