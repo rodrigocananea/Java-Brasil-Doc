@@ -21,9 +21,8 @@ System.out.println(retorno.getCodRetorno() + " - " + retorno.getMensagemRetorno(
 System.out.println(retorno.getCodigoBarras());
 ```
 
-Alterar / Consultar / Baixar /
-### Imprimir
-::: info Sobre
+### Alterar / Consultar / Baixar
+::: tip Sobre
 Estes métodos ainda estão em desenvolvimento
 :::
 
