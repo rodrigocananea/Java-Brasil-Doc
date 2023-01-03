@@ -28,5 +28,21 @@ Estes métodos ainda estão em desenvolvimento
 
 ### Imprimir
 ::: danger Aviso
-O banco não permite essas operações via API
+O banco não permite essas operações via API, assim será utilizada impressão com informações locais.
 :::
+```java
+BoletoModel boletoModel = preencheBoleto();
+
+// Retorno em byte array
+byte[] boletoImprimir = boletoService.imprimirBoletoJasper(boletoModel);
+
+// Ou
+// Imprimir com jasper 
+boolean imprimirDireto = false;
+PrintService impressoraUtilizada = // impressora padrão ou selecionada
+
+// Caso o imprimirDireto seja false será aberto na 
+// tela um jasperViewer com o PDF dentro
+boletoService.imprimirBoletoJasperDesktop(boletoModel, imprimirDireto, impressoraPadrao);
+```
+
