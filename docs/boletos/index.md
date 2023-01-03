@@ -16,7 +16,7 @@ Para ter o acesso a esta biblioteca deve entrar em contato pelo [Discord](https:
 ## Boletos/Bancos Desenvolvidos
 | **Banco / Entidade** | **Tipo** | **Envio** | **Alteração** | **Consulta** | **Baixa** | **Impressão** |
 | -------------------- | :------: | :-------: | :-----------: | :----------: | :-------: | :-----------: |
-| Banco do Brasil      |   API    |     ✅     |       🕐       |      🔁       |     🕐     |       ❌       |
+| Banco do Brasil      |   API    |     ✅     |       🕐       |      ✅       |     🕐     |       ❌       |
 | Banco do Brasil CNAB | CNAB 240 |     ✅     |       ✅       |      ✅       |     ✅     |       ✅       |
 | BanriSul             |   API    |     ✅     |       ✅       |      ✅       |     ✅     |       ✅       |
 | BanriSul CNAB        | CNAB 240 |     ✅     |       ✅       |      ✅       |     ✅     |       ✅       |
