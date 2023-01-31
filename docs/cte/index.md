@@ -36,6 +36,7 @@ dependencies {
     implementation "br.com.swconsultoria:java-cte:3.00.8"
 }
 ```
-::: tip Versões Java
-Até o momento esta biblioteca tem somente suporte para a versão 8 (1.8)
+
+::: tip Sobre
+Biblioteca com suporte para **Java 8**, para demais versões ainda será implementado o suporte
 :::
