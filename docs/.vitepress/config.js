@@ -94,6 +94,7 @@ export default {
             { text: 'Baixar Documento (DistDfe)', link: '/nfe/baixar-documento' },
             { text: 'Consulta Cadastro', link: '/nfe/consulta-cadastro' },
             { text: 'Envio Epec', link: '/nfe/envio-epec' },
+            { text: 'Ler XML', link: '/nfe/ler-xml' },
           ]
         },
       ],
