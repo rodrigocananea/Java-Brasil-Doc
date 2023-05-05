@@ -17,6 +17,7 @@ export default {
           { text: "Java-NFe", link: "/nfe/index" },
           { text: "Java-CTe", link: "/cte/index" },
           { text: "Java-Boletos", link: "/boletos/index" },
+          { text: "Java-Danfe", link: "/danfe/index" },
           { text: "Java-eSocial", link: "https://github.com/Samuel-Oliveira/Java-eSocial" },
         ],
       },
@@ -40,12 +41,13 @@ export default {
           ]
         },
         {
-          text: 'Configuração',
+          text: 'Utilização',
           items: [
-            { text: 'Certificado A1', link: '/danfe/certificado-a1' },
-            { text: 'Certificado A3', link: '/danfe/certificado-a3' },
-            { text: 'Certificado Por CNPJ/CPF', link: '/danfe/certificado-por-cnpjcpf' },
-            { text: 'Repositórios', link: '/danfe/repositorios' }
+            { text: 'Impressão HTML', link: '/danfe/impressao-html' },
+            { text: 'Impressão Jasper', link: '/danfe/impressao-jasper' },
+            { text: 'Impressão Layout', link: '/danfe/impressao-layout' },
+            { text: 'Impressão PDF', link: '/danfe/impressao-pdf-arquivo' },
+            { text: 'Impressão PDF Byte', link: '/danfe/impressao-pdf-byte' }
           ]
         },
       ],

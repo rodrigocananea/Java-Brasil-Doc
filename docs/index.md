@@ -46,8 +46,8 @@ features:
     linkText: "Github"  
   - title: Java-DANFe
     details: Biblioteca para impressão de Documentos Fiscais
-    link: https://github.com/Samuel-Oliveira/Java_Danfe
-    linkText: "Github"  
+    link: /danfe/
+    linkText: "Exibir"  
 
 # Meta property
 head:
