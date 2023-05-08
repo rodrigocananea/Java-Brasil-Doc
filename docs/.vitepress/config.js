@@ -124,6 +124,7 @@ export default {
             { text: 'Inutilização', link: '/cte/inutilizacao' },
             { text: 'Carta de Correção Eletrônica', link: '/cte/carta-correcao' },
             { text: 'Baixar Documento', link: '/cte/baixar-documento' },
+            { text: 'Extras', link: '/cte/extras' },
           ]
         },
       ],
