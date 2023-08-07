@@ -20,8 +20,11 @@ BoletoService boletoService = new BoletoService(BoletoBanco.EXEMPLO, configuraca
 ```java
 BoletoModel boletoModel = preencheBoleto();
 
+// Retorno em JasperPrint
+byte[] boletoImprimir = boletoService.imprimirBoleto(boletoModel);
+
 // Retorno em byte array
-byte[] boletoImprimir = boletoService.imprimirBoletoJasper(boletoModel);
+byte[] boletoImprimir = boletoService.imprimirBoletoByte(boletoModel);
 
 // Ou
 // Imprimir com jasper 
@@ -34,14 +37,12 @@ boletoService.imprimirBoletoJasperDesktop(boletoModel, imprimirDireto, impressor
 ```
 
 ### Imprimir em conjunto
+Cada metodo para impressão (fora as API) contem um construtor para receber um `List<BoletoModel>`
 ```java
 BoletoModel boleto1 = preencheBoleto();
 BoletoModel boleto2 = preencheBoleto();
 
-byte[] bytes1 = boletoService.imprimirBoletoJasper(boleto1);
-byte[] bytes2 = boletoService.imprimirBoletoJasper(boleto2);
-
-byte[] bytesUnidos = JasperUtil.unirRelatorio(Arrays.asList(bytes1, bytes2));
+byte[] bytesUnidos = boletoService.imprimirBoletoByte(Arrays.asList(boleto1, boleto2));
 
 Files.write(Paths.get("d:/teste/teste.pdf"), bytesUnidos);
 ```
