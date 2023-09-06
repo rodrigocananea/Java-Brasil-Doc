@@ -182,6 +182,7 @@ export default {
             { text: 'Configuração', link: '/boletos/itau/configuracoes' },
             { text: 'Preenchimento', link: '/boletos/itau/preenchimento' },
             { text: 'API', link: '/boletos/itau/api' },
+            { text: 'CNAB', link: '/boletos/itau/cnab' },
           ]
         },
 
