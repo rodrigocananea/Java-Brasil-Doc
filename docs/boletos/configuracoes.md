@@ -46,3 +46,12 @@ byte[] bytesUnidos = boletoService.imprimirBoletoByte(Arrays.asList(boleto1, bol
 
 Files.write(Paths.get("d:/teste/teste.pdf"), bytesUnidos);
 ```
+### Imprimir modelo carnê
+Modelo carnê/resumido de boletos para qualquer banco que estiver utilizando layout CNAB
+```java
+ConfiguracaoExemplo configuracao = new ConfiguracaoExemplo();
+// antes de passar a configuração para o service chame este método abaixo
+configuracao.usarModeloImpressaoBoletoCarne();
+
+BoletoService boletoService = new BoletoService(BoletoBanco.EXEMPLO, configuracao);
+```

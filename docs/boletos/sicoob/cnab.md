@@ -35,33 +35,3 @@ List<RemessaRetornoModel> remessaRetornoModels = boletoService.importarArquivoRe
 
 System.out.println(remessaRetornoModels);
 ```
-
-### Imprimir
-```java
-BoletoModel boletoModel = preencheBoleto();
-
-// Retorno em byte array
-byte[] boletoImprimir = boletoService.imprimirBoletoJasper(boletoModel);
-
-// Ou
-// Imprimir com jasper 
-boolean imprimirDireto = false;
-PrintService impressoraUtilizada = // impressora padrão ou selecionada
-
-// Caso o imprimirDireto seja false será aberto na 
-// tela um jasperViewer com o PDF dentro
-boletoService.imprimirBoletoJasperDesktop(boletoModel, imprimirDireto, impressoraPadrao);
-```
-
-### Imprimir em conjunto
-```java
-BoletoModel boleto1 = preencheBoleto();
-BoletoModel boleto2 = preencheBoleto();
-
-byte[] bytes1 = boletoService.imprimirBoletoJasper(boleto1);
-byte[] bytes2 = boletoService.imprimirBoletoJasper(boleto2);
-
-byte[] bytesUnidos = JasperUtil.unirRelatorio(Arrays.asList(bytes1, bytes2));
-
-Files.write(Paths.get("d:/teste/teste.pdf"), bytesUnidos);
-```

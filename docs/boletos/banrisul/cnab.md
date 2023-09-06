@@ -30,20 +30,3 @@ String arquivo = // arquivo de retorno
 List<RemessaRetornoModel> retorno = boletoService.importarArquivoRetorno(arquivo);
 
 ```
-
-### Imprimir
-```java
-BoletoModel boletoModel = preencheBoleto();
-
-// Retorno em byte array
-byte[] boletoImprimir = boletoService.imprimirBoletoJasper(boletoModel);
-
-// Ou
-// Imprimir com jasper 
-boolean imprimirDireto = false;
-PrintService impressoraUtilizada = // impressora padrão ou selecionada
-
-// Caso o imprimirDireto seja false será aberto na 
-// tela um jasperViewer com o PDF dentro
-boletoService.imprimirBoletoJasperDesktop(boletoModel, imprimirDireto, impressoraPadrao);
-```
