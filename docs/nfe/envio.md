@@ -323,6 +323,17 @@ public class EnvioNfeTeste {
         cofinsAliq.setVCOFINS("0.99");
         cofins.setCOFINSAliq(cofinsAliq);
 
+        TIpi ipi = new TIpi();
+        TIpi.IPITrib ipiTrib = new TIpi.IPITrib();
+        ipiTrib.setCST("99");
+        ipiTrib.setVBC("0.00");
+        ipiTrib.setPIPI("0.00");
+        ipiTrib.setVIPI("0.00");
+        ipi.setIPITrib(ipiTrib);
+
+        // Dependendo da empresa/tributação não deve ser informado esta linha do IPI, assim informar um condicional (if)
+        imposto.getContent().add(new ObjectFactory().createTNFeInfNFeDetImpostoIPI(ipi));
+
         imposto.getContent().add(new ObjectFactory().createTNFeInfNFeDetImpostoICMS(icms));
         imposto.getContent().add(new ObjectFactory().createTNFeInfNFeDetImpostoPIS(pis));
         imposto.getContent().add(new ObjectFactory().createTNFeInfNFeDetImpostoCOFINS(cofins));
