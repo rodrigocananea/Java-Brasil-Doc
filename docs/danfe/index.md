@@ -8,10 +8,10 @@
 ## Gostou do Projeto? Dê sua colaboração pelo Pix: 01713390108
 <p align="center">
     <img src="https://swconsultoria.com.br/pix.png" width="220">
-</p>`
-`
+</p>
+
 Para Iniciar :
-- Caso use Libs baixe o [java-danfe-1.2.jar](https://github.com/Samuel-Oliveira/Java_Danfe/raw/master/java-danfe-1.6.jar) e o adicione às bibliotecas de Seu Projeto.
+- Caso use Libs baixe o [java-danfe-1.6.jar](https://github.com/Samuel-Oliveira/Java_Danfe/raw/master/java-danfe-1.6.jar) e o adicione às bibliotecas de Seu Projeto.
 
 - Maven :
 ```xml
