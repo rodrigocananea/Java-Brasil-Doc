@@ -10,14 +10,14 @@
     <img src="https://swconsultoria.com.br/pix.png" width="220">
 </p>
 
-Para Iniciar : 
-- Caso use Libs baixe o java-certificado-2.8.jar (https://github.com/Samuel-Oliveira/Java_Certificado/raw/master/java_certificado-2.8.jar) e o adicione às bibliotecas de Seu Projeto.
+Para Iniciar :
+- Caso use External Jar, baixe a ultima versão em [Releases](https://github.com/Samuel-Oliveira/Java_Certificado/releases) e o adicione às bibliotecas de Seu Projeto.
 
 - Caso use Maven :
-```xml
+```
 <dependency>
     <groupId>br.com.swconsultoria</groupId>
     <artifactId>java_certificado</artifactId>
-    <version>2.8</version>
+    <version>3.8</version>
 </dependency>
 ```

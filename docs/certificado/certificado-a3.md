@@ -35,11 +35,18 @@ public class A3Dll {
     }
 
     private static Certificado certificadoA3Dll() throws CertificadoException {
-        String marcaA3 = TipoCertificadoA3.TOKEN_ALADDIN.getMarca();
-        String dllA3 = TipoCertificadoA3.TOKEN_ALADDIN.getDll();
-        String senha = "123456";
+        TipoCertificadoA3 tipoA3 = //Escolha um dos tipo A3 do Enum de acordo com seu aparelho.
 
-        return CertificadoService.certificadoA3(marcaA3, dllA3, senha);
+                //Exemplo para Java 8
+                ByteArrayInputStream configStream = new ByteArrayInputStream(tipoA3.getConfigA3().getBytes(StandardCharsets.UTF_8));
+        Provider provider = new sun.security.pkcs11.SunPKCS11(configStream);
+
+        //Exemplo para Java 9+
+        Path tempConfigFile = Files.createTempFile("pkcs11-config", ".cfg");
+        Files.write(tempConfigFile, tipoA3.getConfigA3().getBytes(StandardCharsets.UTF_8));
+        Provider provider = Security.getProvider("SunPKCS11").configure(tempConfigFile.toFile().getAbsolutePath());
+
+        return CertificadoService.certificadoA3("1234",p rovider);
     }
 }
 ```

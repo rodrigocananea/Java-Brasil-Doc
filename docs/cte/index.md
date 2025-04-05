@@ -11,17 +11,15 @@
 </p>
 
 
-Para Iniciar : 
-- Caso use Libs baixe o [java-cte-3.00.8.jar](https://github.com/Samuel-Oliveira/Java_CTe/raw/master/java-cte-3.00.7.jar) e o adicione às bibliotecas de Seu Projeto.
-
-- Baixe o [Schemas.rar](https://github.com/Samuel-Oliveira/Java_CTe/raw/master/Schemas.rar) e extraia na sua Máquina.
+Para Iniciar :
+- Baixe o [Schemas.rar](https://github.com/Samuel-Oliveira/Java_CTe/raw/master/schemas.zip) e extraia na sua Máquina.
 
 - Maven :
 ```xml
 <dependency>
     <groupId>br.com.swconsultoria</groupId>
     <artifactId>java-cte</artifactId>
-    <version>3.00.8</version>
+    <version>4.00.10</version>
 </dependency>
 ```
 
@@ -33,10 +31,6 @@ repositories {
     }
 }
 dependencies {
-    implementation "br.com.swconsultoria:java-cte:3.00.8"
+    implementation "br.com.swconsultoria:java-cte:4.00.10"
 }
 ```
-
-::: tip Sobre
-Biblioteca com suporte para **Java 8**, para demais versões ainda será implementado o suporte
-:::

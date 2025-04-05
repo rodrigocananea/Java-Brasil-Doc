@@ -10,9 +10,7 @@
     <img src="https://swconsultoria.com.br/pix.png" width="220">
 </p>
 
-Para Iniciar : 
-- Caso use Libs baixe o [java-nfe-4.00.18.jar](https://github.com/Samuel-Oliveira/Java_NFe/raw/master/java-nfe-4.00.18.jar) e o adicione às bibliotecas de Seu Projeto.
-
+Para Iniciar :
 - Baixe o [Schemas.rar](https://github.com/Samuel-Oliveira/Java_NFe/raw/master/schemas.zip) e extraia na sua Máquina.
 
 - Maven :
@@ -20,7 +18,7 @@ Para Iniciar :
 <dependency>
     <groupId>br.com.swconsultoria</groupId>
     <artifactId>java-nfe</artifactId>
-    <version>4.00.18</version>
+    <version>4.00.36</version>
 </dependency>
 ```
 
@@ -32,7 +30,7 @@ repositories {
     }
 }
 dependencies {
-    implementation "br.com.swconsultoria:java-nfe:4.00.18"
+    implementation "br.com.swconsultoria:java-nfe:4.00.36"
 }
 ```
 
