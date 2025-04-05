@@ -11,14 +11,14 @@
 </p>
 
 Para Iniciar :
-- Caso use Libs baixe o [java-danfe-1.6.jar](https://github.com/Samuel-Oliveira/Java_Danfe/raw/master/java-danfe-1.6.jar) e o adicione às bibliotecas de Seu Projeto.
+- Caso use Libs baixe o [java-danfe-1.8.jar](https://github.com/Samuel-Oliveira/Java_Danfe/raw/master/java-danfe-1.6.jar) e o adicione às bibliotecas de Seu Projeto.
 
 - Maven :
 ```xml
 <dependency>
     <groupId>br.com.swconsultoria</groupId>
     <artifactId>java-danfe</artifactId>
-    <version>1.6</version>
+    <version>1.8</version>
 </dependency>
 ```
 
@@ -30,7 +30,7 @@ repositories {
     }
 }
 dependencies {
-    implementation "br.com.swconsultoria:java-danfe:1.6"
+    implementation "br.com.swconsultoria:java-danfe:1.8"
 }
 ```
 
