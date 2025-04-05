@@ -1,8 +1,7 @@
 # Impressão Jasper Preview
 
-Para imprimir para um arquivo PDF:
+Para imprimir para um arquivo PDF
 
-### Impressão Jasper Preview
 ```java
 import br.com.swconsultoria.impressao.model.Impressao;
 import br.com.swconsultoria.impressao.service.ImpressaoService;

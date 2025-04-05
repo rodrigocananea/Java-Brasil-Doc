@@ -43,6 +43,7 @@ export default {
         {
           text: 'Utilização',
           items: [
+            { text: 'Configurar Localização', link: '/danfe/configurar-localizacao' },
             { text: 'Impressão HTML', link: '/danfe/impressao-html' },
             { text: 'Impressão Jasper', link: '/danfe/impressao-jasper' },
             { text: 'Impressão Layout', link: '/danfe/impressao-layout' },

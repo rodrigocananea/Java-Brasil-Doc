@@ -1,8 +1,7 @@
 # Impressão HTML
 
-Para imprimir para um arquivo HTML:
+Para imprimir para um arquivo HTML
 
-### Impressão HTML
 ```java
 import br.com.swconsultoria.impressao.model.Impressao;
 import br.com.swconsultoria.impressao.service.ImpressaoService;

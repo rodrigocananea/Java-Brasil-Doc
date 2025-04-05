@@ -1,8 +1,7 @@
 # Impressão Layout Próprio
 
-Para imprimir para um arquivo PDF:
+Para imprimir para um arquivo PDF
 
-### Impressão Layout Próprio
 ```java
 import br.com.swconsultoria.impressao.model.Impressao;
 import br.com.swconsultoria.impressao.service.ImpressaoService;

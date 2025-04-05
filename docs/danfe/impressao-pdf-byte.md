@@ -1,8 +1,7 @@
 # Impressão PDF Byte[]
 
-Para imprimir para um arquivo PDF Byte[]:
+Para imprimir para um arquivo PDF Byte[]
 
-### Impressão PDF Byte[]
 ```java
 import br.com.swconsultoria.impressao.model.Impressao;
 import br.com.swconsultoria.impressao.service.ImpressaoService;

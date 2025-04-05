@@ -1,8 +1,7 @@
 # Impressão PDF Arquivo
 
-Para imprimir para um arquivo PDF:
+Para imprimir para um arquivo PDF
 
-### Impressão PDF Arquivo
 ```java
 import br.com.swconsultoria.impressao.model.Impressao;
 import br.com.swconsultoria.impressao.service.ImpressaoService;
