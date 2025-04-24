@@ -18,7 +18,7 @@ public class TesteImpressaoModificado {
             Impressao impressao = ImpressaoUtil.impressaoPadraoNFe(xml);
 
             //Vc pode informar qlq jasper da sua escolha
-            impressao.setJasper(TesteImpressaoModificado.class.getResourceAsStream("/danfe-modificado.jasper"));
+            impressao.setJasper(ImpressaoUtil.carregaJasperResources("/danfe-modificado.jasper"));
             //Para trocar a Logo
             impressao.getParametros().put("Logo", TesteImpressaoModificado.class.getResourceAsStream("/logo-java.png"));
 
