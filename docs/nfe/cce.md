@@ -1,14 +1,14 @@
 # Carta de Correção Eletrônica
 
-Função para Gerar a Carta De Correção Eletrônica.
+Função para gerar a Carta de Correção Eletrônica.
 
 ### Envio
 ```java
 import br.com.swconsultoria.nfe.Nfe;
 import br.com.swconsultoria.nfe.dom.ConfiguracoesNfe;
 import br.com.swconsultoria.nfe.dom.Evento;
-import br.com.swconsultoria.nfe.schema.envcce.TEnvEvento;
-import br.com.swconsultoria.nfe.schema.envcce.TRetEnvEvento;
+import br.com.swconsultoria.nfe.schemas_eventos.TEnvEventoCartaCorrecao;
+import br.com.swconsultoria.nfe.schemas_eventos.TRetEnvEventoCartaCorrecao;
 import br.com.swconsultoria.nfe.util.CartaCorrecaoUtil;
 import br.com.swconsultoria.nfe.util.RetornoUtil;
 
@@ -16,20 +16,17 @@ import java.time.LocalDateTime;
 
 /**
  * @author Samuel Oliveira
- *
  */
 public class CartaCorrecaoTeste {
 
     public static void main(String[] args) {
-
         try {
             // Inicia As Configurações (1)
             ConfiguracoesNfe config = Config.iniciaConfiguracoes();
 
-            //Agora o evento pode aceitar uma lista de cancelaemntos para envio em Lote.
-            //Para isso Foi criado o Objeto Cancela
+            //O evento aceita uma lista para envio em Lote: CartaCorrecaoUtil.montaCCe(List<Evento>, config)
             Evento cce = new Evento();
-            //Informe a chave da Nota a ser feita a CArta de Correção
+            //Informe a chave da Nota a ser feita a Carta de Correção
             cce.setChave("XXX");
             //Informe o CNPJ do emitente
             cce.setCnpj("XXX");
@@ -37,16 +34,16 @@ public class CartaCorrecaoTeste {
             cce.setMotivo("Teste de Carta de Correção");
             //Informe a data da Carta de Correção
             cce.setDataEvento(LocalDateTime.now());
-            //Informe a sequencia do Evento
+            //Informe a sequencia do Evento (cada nova CC-e da mesma nota incrementa)
             cce.setSequencia(1);
 
             // Monta o Evento
-            TEnvEvento envEvento = CartaCorrecaoUtil.montaCCe(cce,config);
+            TEnvEventoCartaCorrecao envEvento = CartaCorrecaoUtil.montaCCe(cce, config);
 
             //Envia a CCe
-            TRetEnvEvento retorno = Nfe.cce(config, envEvento, true);
+            TRetEnvEventoCartaCorrecao retorno = Nfe.cce(config, envEvento, true);
 
-            //Valida o Retorno do Carta de Correção
+            //Valida o Retorno da Carta de Correção
             RetornoUtil.validaCartaCorrecao(retorno);
 
             //Resultado
@@ -57,7 +54,7 @@ public class CartaCorrecaoTeste {
                 System.out.println("# Protocolo: " + resultado.getInfEvento().getNProt());
             });
 
-            //Cria ProcEvento da CCe
+            //Cria ProcEvento da CCe (o evento é assinado internamente)
             String proc = CartaCorrecaoUtil.criaProcEventoCCe(config, envEvento, retorno);
             System.out.println();
             System.out.println("# ProcEvento : " + proc);
@@ -66,10 +63,12 @@ public class CartaCorrecaoTeste {
             System.err.println();
             System.err.println(e.getMessage());
         }
-
     }
-
 }
 ```
 
 1.  Acesse o menu [Configurações (Certificado)](./configuracoes.md)
+
+::: tip
+Para imprimir a CC-e, veja [Impressão](./impressao.md#carta-de-correcao-cc-e).
+:::

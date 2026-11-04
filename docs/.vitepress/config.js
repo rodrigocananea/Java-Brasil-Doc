@@ -76,12 +76,13 @@ export default {
           text: 'Inicio',
           items: [
             { text: 'Pagina Inicial', link: '/nfe/index' },
+            { text: 'Migração v4.00 → v4.1', link: '/nfe/migracao' },
           ]
         },
         {
           text: 'Configuração',
           items: [
-            { text: 'Certificado', link: '/nfe/configuracoes' },
+            { text: 'Certificado e Opções', link: '/nfe/configuracoes' },
           ]
         },
         {
@@ -97,7 +98,22 @@ export default {
             { text: 'Baixar Documento (DistDfe)', link: '/nfe/baixar-documento' },
             { text: 'Consulta Cadastro', link: '/nfe/consulta-cadastro' },
             { text: 'Envio Epec', link: '/nfe/envio-epec' },
+            { text: 'Conciliação Financeira (ECONF)', link: '/nfe/econf' },
             { text: 'Ler XML', link: '/nfe/ler-xml' },
+          ]
+        },
+        {
+          text: 'Reforma Tributária',
+          items: [
+            { text: 'IBS / CBS (IbsCbsUtil)', link: '/nfe/reforma-tributaria' },
+            { text: 'Eventos (Evento Genérico)', link: '/nfe/evento-generico' },
+          ]
+        },
+        {
+          text: 'Impressão',
+          items: [
+            { text: 'DANFE / DANFCE / CC-e (Jasper)', link: '/nfe/impressao' },
+            { text: 'DANFE v2 (NT 2026.010)', link: '/nfe/impressao-danfe-v2' },
           ]
         },
       ],
