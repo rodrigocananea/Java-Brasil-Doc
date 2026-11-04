@@ -1,12 +1,12 @@
 # Status de Serviço
 
-Função para consultar o Status de Serviço Da Sefaz.
+Função para consultar o Status de Serviço da Sefaz.
 
 ```java
 import br.com.swconsultoria.nfe.Nfe;
 import br.com.swconsultoria.nfe.dom.ConfiguracoesNfe;
 import br.com.swconsultoria.nfe.dom.enuns.DocumentoEnum;
-import br.com.swconsultoria.nfe.schema_4.retConsStatServ.TRetConsStatServ;
+import br.com.swconsultoria.nfe.schemas.TRetConsStatServ;
 
 /**
  * @author Samuel Oliveira
@@ -17,14 +17,14 @@ public class StatusServicoTeste {
             // Inicia As Configurações (1)
             ConfiguracoesNfe config = Config.iniciaConfiguracoes();
 
-            //Efetua Consulta
+            //Efetua Consulta (use DocumentoEnum.NFCE para NFC-e)
             TRetConsStatServ retorno = Nfe.statusServico(config, DocumentoEnum.NFE);
 
             //Resultado
             System.out.println();
             System.out.println("# Status: " + retorno.getCStat() + " - " + retorno.getXMotivo());
         } catch (Exception e) {
-            System.err.println("# Erro: "+e.getMessage());
+            System.err.println("# Erro: " + e.getMessage());
         }
     }
 }

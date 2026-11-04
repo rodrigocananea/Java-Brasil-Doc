@@ -1,6 +1,6 @@
 # Manifestação
 
-Função para Manifestar a NF-e Recebida na Sefaz.
+Função para manifestar a NF-e recebida na Sefaz (Manifestação do Destinatário).
 
 ### Enviar evento de Manifestação
 ```java
@@ -8,8 +8,8 @@ import br.com.swconsultoria.nfe.Nfe;
 import br.com.swconsultoria.nfe.dom.ConfiguracoesNfe;
 import br.com.swconsultoria.nfe.dom.Evento;
 import br.com.swconsultoria.nfe.dom.enuns.ManifestacaoEnum;
-import br.com.swconsultoria.nfe.schema.envConfRecebto.TEnvEvento;
-import br.com.swconsultoria.nfe.schema.envConfRecebto.TRetEnvEvento;
+import br.com.swconsultoria.nfe.schemas_eventos.TEnvEventoManifestacao;
+import br.com.swconsultoria.nfe.schemas_eventos.TRetEnvEventoManifestacao;
 import br.com.swconsultoria.nfe.util.ManifestacaoUtil;
 import br.com.swconsultoria.nfe.util.RetornoUtil;
 
@@ -24,27 +24,26 @@ public class ManifestacaoTeste {
             // Inicia As Configurações (1)
             ConfiguracoesNfe config = Config.iniciaConfiguracoes();
 
-            //Agora o evento pode aceitar uma lista de Manifestções para envio em Lote.
-            //Para isso Foi criado o Objeto Manifestada
+            //O evento aceita uma lista de Manifestações para envio em Lote.
             Evento manifesta = new Evento();
             //Informe a chave da Nota a ser Manifestada
-            manifesta.setChave("ZZZ");
-            //Informe o CNPJ do emitente
+            manifesta.setChave("XXX");
+            //Informe o CNPJ do destinatário (o mesmo do certificado)
             manifesta.setCnpj("XXX");
-            //Caso o Tipo de manifestação seja OPERAÇÂO Não REALIZADA, Informe o Motivo do Manifestacao
-            manifesta.setMotivo("Teste Operação Não Realizada");
-            //Informe a data do Manifestacao
+            //Caso o Tipo de manifestação seja OPERACAO_NAO_REALIZADA, informe o Motivo
+            //manifesta.setMotivo("Teste Operação Não Realizada");
+            //Informe a data da Manifestação
             manifesta.setDataEvento(LocalDateTime.now());
-            //Informe o Tipo da Manifestação
+            //Informe o Tipo da Manifestação (2)
             manifesta.setTipoManifestacao(ManifestacaoEnum.CIENCIA_DA_OPERACAO);
 
             //Monta o Evento de Manifestação
-            TEnvEvento enviEvento = ManifestacaoUtil.montaManifestacao(manifesta, config);
+            TEnvEventoManifestacao enviEvento = ManifestacaoUtil.montaManifestacao(manifesta, config);
 
             //Envia o Evento de Manifestação
-            TRetEnvEvento retorno = Nfe.manifestacao(config, enviEvento, true);
+            TRetEnvEventoManifestacao retorno = Nfe.manifestacao(config, enviEvento, true);
 
-            //Valida o Retorno do Cancelamento
+            //Valida o Retorno da Manifestação
             RetornoUtil.validaManifestacao(retorno);
 
             //Resultado
@@ -55,17 +54,22 @@ public class ManifestacaoTeste {
                 System.out.println("# Protocolo: " + resultado.getInfEvento().getNProt());
             });
 
-            //Cria ProcEvento de Manifestacao
+            //Cria ProcEvento de Manifestação
             String proc = ManifestacaoUtil.criaProcEventoManifestacao(config, enviEvento, retorno.getRetEvento().get(0));
             System.out.println();
             System.out.println("# ProcEvento : " + proc);
 
         } catch (Exception e) {
             System.err.println();
-            System.err.println("# Erro: "+e.getMessage());
+            System.err.println("# Erro: " + e.getMessage());
         }
     }
 }
 ```
 
 1.  Acesse o menu [Configurações (Certificado)](./configuracoes.md)
+2.  Valores de `ManifestacaoEnum`: `CIENCIA_DA_OPERACAO`, `CONFIRMACAO_DA_OPERACAO`, `DESCONHECIMENTO_DA_OPERACAO`, `OPERACAO_NAO_REALIZADA`.
+
+::: tip
+Após a Ciência da Operação, o XML completo fica disponível via [Distribuição DF-e](./baixar-documento.md).
+:::
